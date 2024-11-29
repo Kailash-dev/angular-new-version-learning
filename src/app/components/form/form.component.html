@@ -1,0 +1,15 @@
+<p>form works!</p>
+<!-- src/app/form/form.component.html -->
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>
+      Name:
+      <input formControlName="name" />
+    </label>
+    <label>
+      Age:
+      <input formControlName="age" />
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  <p>{{ profileForm.value | json }}</p>
+  

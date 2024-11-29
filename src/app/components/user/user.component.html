@@ -1,0 +1,15 @@
+
+
+<input [(ngModel)]="userName" placeholder="Enter your name" />
+<button (click)="sayHello()">Say Hello</button>
+<p>{{ message }}</p>
+
+
+
+<ul>
+    <li *ngFor="let user of users">{{ user }}</li>
+  </ul>
+  <button (click)="toggleUsers()" >Toggle Users</button>
+  <p *ngIf="showUsers" appHighlight>Users are visible</p>
+
+  <p appHighlight>Users are visible</p>

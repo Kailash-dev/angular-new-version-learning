@@ -1,0 +1,9 @@
+
+<div class="card-container">
+    <app-card 
+      *ngFor="let operator of operators"
+      [label]="operator.name"
+      [route]="operator.route">
+    </app-card>
+  </div>
+  
